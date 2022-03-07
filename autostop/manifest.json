@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "autostop",
+    "version": "1.0",
+  
+    "description": "stop youtube autoplay",
+  
+    "icons":{
+        "48": "play-icon.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["autostop.js"]
+      }
+    ]
+  
+  }
+  
